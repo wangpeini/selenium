@@ -6,6 +6,6 @@ assert "百度" in driver.title  #增加判断assert
 driver.find_element_by_id("kw").send_keys("流星花园")
 
 driver.find_element_by_id("su").click()
-l = driver.find_element_by_id("content_left").text#拿到文本值text
+l = driver.find_element_by_id("content_left").text获取文本
 print(l)
 assert "流星花园" in l
